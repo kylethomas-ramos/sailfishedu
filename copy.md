@@ -37,14 +37,14 @@ H2: *Built for two kinds of families.*
 
 **What you walk away with:**
 - A polished Common Application personal statement (650 words)
-- Polished supplemental essays for up to five schools (typically 15–25 short essays)
+- Polished supplemental essays for up to three schools (typically 10–15 short essays)
 - A polished résumé
 - A Common Application activities list
 
 **How it works:** Weekly 60-minute Zoom sessions, plus written feedback on every draft within 48 hours. The schedule runs late June through mid-August, with a target completion before Labor Day.
 
 **Add-ons:**
-- Additional school's supplements — $300 per school beyond five
+- Additional school's supplements — $300 per school beyond three
 - Interview prep (two mock interviews + debrief) — $300
 - Ad-hoc check-in sessions after application completion (1 hour) — $200 each
 
@@ -56,7 +56,7 @@ H2: *Built for two kinds of families.*
 
 ## Offer 2 — Junior Year Roadmap Session
 
-**Tagline:** *One hour-long conversation. One personalized written plan. No upsell.*
+**Tagline:** *One hour-long conversation. One personalized written plan.*
 
 **Price:** $225
 
@@ -100,7 +100,7 @@ The intensive is built for students aiming at selective programs where essays ar
 
 **Can we add more schools' supplements partway through?**
 
-Yes. Additional supplemental essays are $300 per school beyond the first five. Most families add 1–3 schools mid-summer once the personal statement is locked in.
+Yes. Additional supplemental essays are $300 per school beyond the first three. Most families add 2–4 schools mid-summer once the personal statement is locked in.
 
 **How do payments work?**
 
