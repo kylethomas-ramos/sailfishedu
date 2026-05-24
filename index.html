@@ -104,6 +104,24 @@
     white-space: nowrap;
   }
   nav.top a.cta-small:hover { background: var(--white); color: var(--navy); }
+  nav.top .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  nav.top .nav-links a {
+    color: var(--blue-light);
+    font-size: 0.82rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.15s;
+    white-space: nowrap;
+  }
+  nav.top .nav-links a:hover { color: var(--gold); }
 
   /* -------- Hero -------- */
   .hero {
@@ -493,6 +511,7 @@
     nav.top .brand { font-size: 0.85rem; letter-spacing: 0.12em; }
     nav.top .brand span { font-size: 0.6rem; }
     nav.top a.cta-small { font-size: 0.8rem; padding: 0.5rem 0.9rem; }
+    nav.top .nav-links { display: none; }
     .hero { padding: 3rem 0 5rem; }
     .hero .container {
       grid-template-columns: 1fr;
@@ -517,6 +536,12 @@
 <nav class="top">
   <div class="container">
     <a href="#top" class="brand">Sailfish<span>Education Consulting</span></a>
+    <ul class="nav-links">
+      <li><a href="#who">Who It&rsquo;s For</a></li>
+      <li><a href="#offers">Programs</a></li>
+      <li><a href="#bio">About</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
     <a href="#contact" class="cta-small">Free Consultation</a>
   </div>
 </nav>
@@ -537,7 +562,7 @@
 </header>
 
 <!-- Who I work with -->
-<section class="who">
+<section class="who" id="who">
   <div class="container">
     <span class="section-eyebrow">Who this is for</span>
     <h2>Built for two kinds of families.</h2>
@@ -605,7 +630,7 @@
         </div>
         <div class="price">
           <small>Flat fee</small>
-          $225
+          $300
         </div>
       </div>
 
@@ -632,7 +657,7 @@
 </section>
 
 <!-- Bio -->
-<section class="bio">
+<section class="bio" id="bio">
   <div class="container">
     <span class="section-eyebrow">About</span>
     <h2>Kyle Thomas Ramos</h2>
@@ -652,7 +677,7 @@
 </section>
 
 <!-- FAQ -->
-<section class="faq">
+<section class="faq" id="faq">
   <div class="container">
     <span class="section-eyebrow">Questions</span>
     <h2>Frequently asked.</h2>
@@ -679,7 +704,7 @@
 
     <details class="faq-item">
       <summary>How do payments work?</summary>
-      <p>The Summer Essay Intensive is $1,250 at engagement start and $1,250 at the start of Week 4. The Roadmap Session is $225 paid in full at booking. Payment is handled through Stripe.</p>
+      <p>The Summer Essay Intensive is $1,250 at engagement start and $1,250 at the start of Week 4. The Roadmap Session is $300 paid in full at booking. Payment is handled through Stripe.</p>
     </details>
 
     <p class="faq-followup">If you have additional questions, please feel free to email <a href="mailto:kyle@sailfishedu.com">kyle@sailfishedu.com</a>!</p>

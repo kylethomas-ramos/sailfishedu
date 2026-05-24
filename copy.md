@@ -58,7 +58,7 @@ H2: *Built for two kinds of families.*
 
 **Tagline:** *One hour-long conversation. One personalized written plan.*
 
-**Price:** $225
+**Price:** $300
 
 **What you walk away with:**
 - An hour-long live Zoom session (parent and student both welcome)
@@ -104,7 +104,7 @@ Yes. Additional supplemental essays are $300 per school beyond the first three. 
 
 **How do payments work?**
 
-The Summer Essay Intensive is $1,250 at engagement start and $1,250 at the start of Week 4. The Roadmap Session is $225 paid in full at booking. Payment is handled through Stripe.
+The Summer Essay Intensive is $1,250 at engagement start and $1,250 at the start of Week 4. The Roadmap Session is $300 paid in full at booking. Payment is handled through Stripe.
 
 ---
 
