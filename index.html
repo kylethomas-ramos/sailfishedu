@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sailfish Education Consulting | College Essay Coaching with a Yale Grad & Fulbright Winner</title>
+<meta name="description" content="Sailfish Education Consulting pairs rising seniors with a Yale grad and Fulbright winner for eight focused weeks of summer college essay coaching." />
+
+<style>
+  /* -------- Color & type system -------- */
+  :root {
+    --navy: #14304f;
+    --navy-deep: #0d1f3c;
+    --navy-soft: #1f4068;
+    --blue: #4a90b8;
+    --blue-light: #a8d0e6;
+    --sand: #f5efe4;
+    --sand-warm: #ede4d0;
+    --cream: #faf7f1;
+    --white: #ffffff;
+    --gold: #c9a35c;
+    --gold-deep: #a8843d;
+    --text: #2b3a4a;
+    --text-soft: #5a6a7a;
+    --rule: #d8dce2;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--text);
+    background: var(--cream);
+    line-height: 1.65;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--navy);
+    line-height: 1.2;
+    font-weight: normal;
+    letter-spacing: -0.01em;
+  }
+
+  h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); }
+  h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); margin-bottom: 1.2rem; }
+  h3 { font-size: 1.35rem; margin-bottom: 0.6rem; }
+
+  p { margin-bottom: 1rem; }
+
+  a { color: var(--blue); text-decoration: none; transition: color 0.15s; }
+  a:hover { color: var(--gold-deep); }
+
+  .container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  section { padding: 5rem 0; }
+
+  /* -------- Top nav -------- */
+  nav.top {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--navy);
+    padding: 0.6rem 0;
+    box-shadow: 0 2px 12px rgba(13, 31, 60, 0.15);
+  }
+  nav.top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav.top .brand {
+    color: var(--white);
+    font-size: 1.05rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.2;
+  }
+  nav.top .brand span {
+    display: block;
+    color: var(--blue-light);
+    font-size: 0.7rem;
+    letter-spacing: 0.22em;
+    margin-top: 0.1rem;
+  }
+  nav.top .brand:hover { color: var(--gold); }
+  nav.top a.cta-small {
+    color: var(--navy);
+    background: var(--gold);
+    padding: 0.6rem 1.2rem;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  nav.top a.cta-small:hover { background: var(--white); color: var(--navy); }
+
+  /* -------- Hero -------- */
+  .hero {
+    background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: var(--white);
+    padding: 1rem 0 10rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 60' preserveAspectRatio='none'><path d='M0,30 C200,60 400,0 600,30 C800,60 1000,0 1200,30 L1200,60 L0,60 Z' fill='%23faf7f1'/></svg>") no-repeat center / cover;
+    z-index: 2;
+  }
+  .hero .container {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 4rem;
+    align-items: end;
+    position: relative;
+    z-index: 1;
+  }
+  .hero .text { text-align: left; }
+  .hero .logo {
+    width: 460px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1.5rem;
+    display: block;
+    filter: invert(1) drop-shadow(0 4px 14px rgba(0, 0, 0, 0.3));
+  }
+  .hero h1 {
+    color: var(--white);
+    margin: 0 0 1.5rem;
+    max-width: none;
+    font-size: clamp(1.7rem, 3.4vw, 2.5rem);
+    line-height: 1.15;
+  }
+  .hero p.sub {
+    color: var(--blue-light);
+    margin: 0 0 2.5rem;
+    max-width: 540px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+  }
+  .hero .photo-wrapper {
+    position: relative;
+    z-index: 1;
+  }
+  .hero .photo-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.4);
+  }
+
+  .btn-cta {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all 0.2s;
+    border: 2px solid var(--gold);
+  }
+  .btn-cta:hover {
+    background: var(--white);
+    border-color: var(--white);
+    color: var(--navy);
+  }
+
+  .btn-cta-outline {
+    display: inline-block;
+    background: transparent;
+    color: var(--navy);
+    padding: 0.85rem 1.8rem;
+    font-size: 1rem;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid var(--navy);
+    transition: all 0.2s;
+  }
+  .btn-cta-outline:hover {
+    background: var(--navy);
+    color: var(--white);
+  }
+
+  /* -------- Who I work with -------- */
+  .who {
+    background: var(--cream);
+  }
+  .who .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  .who .card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-left: 4px solid var(--blue);
+    border-radius: 2px;
+    box-shadow: 0 2px 12px rgba(20, 48, 79, 0.05);
+  }
+  .who .card h3 {
+    color: var(--navy);
+    margin-bottom: 1rem;
+  }
+  .who .card p { color: var(--text); margin-bottom: 0; }
+  .section-eyebrow {
+    color: var(--gold-deep);
+    font-size: 0.8rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+
+  /* -------- Offers -------- */
+  .offers {
+    background: var(--sand);
+    position: relative;
+  }
+  .offer-block {
+    background: var(--white);
+    padding: 3rem;
+    margin-top: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 4px 20px rgba(20, 48, 79, 0.08);
+  }
+  .offer-block.primary {
+    border-top: 6px solid var(--navy);
+  }
+  .offer-block.secondary {
+    border-top: 6px solid var(--blue);
+  }
+  .offer-block .offer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .offer-block .offer-name h2 { margin-bottom: 0.4rem; }
+  .offer-block .offer-name p.tagline {
+    color: var(--text-soft);
+    font-style: italic;
+    margin-bottom: 0;
+  }
+  .offer-block .price {
+    font-size: 2.5rem;
+    color: var(--navy);
+    font-weight: normal;
+    text-align: right;
+  }
+  .offer-block .price small {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-soft);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.3rem;
+  }
+  .offer-block h4 {
+    color: var(--navy);
+    margin: 1.5rem 0 0.6rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .offer-block ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  .offer-block ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.6rem;
+  }
+  .offer-block ul li::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 0.8rem;
+    top: 0.4rem;
+  }
+  .offer-block .offer-cta {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .offer-block .refund-note {
+    color: var(--text-soft);
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    padding-top: 1rem;
+  }
+
+  /* -------- Bio -------- */
+  .bio {
+    background: var(--white);
+  }
+  .bio .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: start;
+    margin-top: 2rem;
+  }
+  .bio .bio-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 8px 28px rgba(20, 48, 79, 0.18);
+  }
+  .bio .text p { color: var(--text); font-size: 1.05rem; }
+  .bio .text .placeholder-note {
+    background: var(--sand);
+    border-left: 4px solid var(--gold);
+    padding: 1rem 1.5rem;
+    color: var(--text-soft);
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+  .bio .bio-links {
+    margin-top: 1.75rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  .bio .bio-links a {
+    color: var(--navy);
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border-bottom: 1.5px solid var(--gold);
+    padding-bottom: 3px;
+    transition: all 0.15s;
+  }
+  .bio .bio-links a:hover {
+    color: var(--gold-deep);
+    border-bottom-color: var(--gold-deep);
+  }
+
+  /* -------- FAQ -------- */
+  .faq {
+    background: var(--cream);
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--rule);
+    padding: 0;
+  }
+  .faq-item:last-child { border-bottom: none; }
+  .faq-item summary {
+    color: var(--navy);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1.5rem 2.5rem 1.5rem 0;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    transition: color 0.15s;
+    outline: none;
+  }
+  .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+  .faq-item summary::after {
+    content: '+';
+    position: absolute;
+    right: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    color: var(--gold);
+    font-weight: normal;
+    line-height: 1;
+    transition: transform 0.25s ease, color 0.15s;
+  }
+  .faq-item[open] summary::after {
+    content: '−';
+    color: var(--gold-deep);
+  }
+  .faq-item summary:hover {
+    color: var(--gold-deep);
+  }
+  .faq-item summary:hover::after {
+    color: var(--gold-deep);
+  }
+  .faq-item p {
+    color: var(--text);
+    padding: 0 0 1.75rem 0;
+    margin: 0;
+    animation: faqFadeIn 0.25s ease;
+    max-width: 760px;
+  }
+  @keyframes faqFadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .faq-followup {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-style: italic;
+    color: var(--text-soft);
+    font-size: 1.05rem;
+  }
+  .faq-followup a {
+    color: var(--navy);
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1.5px solid var(--gold);
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .faq-followup a:hover {
+    color: var(--gold-deep);
+    border-bottom-color: var(--gold-deep);
+  }
+
+  /* -------- Footer CTA -------- */
+  .footer-cta {
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 5rem 0;
+  }
+  .footer-cta h2 {
+    color: var(--white);
+    max-width: 620px;
+    margin: 0 auto 1.5rem;
+  }
+  .footer-cta p {
+    color: var(--blue-light);
+    max-width: 540px;
+    margin: 0 auto 2.5rem;
+  }
+
+  /* -------- Footer -------- */
+  footer.site {
+    background: var(--navy-deep);
+    color: var(--blue-light);
+    padding: 3rem 0 2rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  footer.site .footer-logo {
+    height: 90px;
+    width: auto;
+    margin-bottom: 1rem;
+    filter: invert(1);
+    opacity: 0.9;
+  }
+  footer.site a { color: var(--blue-light); }
+  footer.site a:hover { color: var(--gold); }
+  footer.site p { margin-bottom: 0.4rem; }
+
+  /* -------- Mobile -------- */
+  @media (max-width: 720px) {
+    body { font-size: 17px; }
+    .who .grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    .bio .grid { grid-template-columns: 1fr; }
+    .bio .bio-photo { max-width: 280px; margin: 0 auto; }
+    .offer-block { padding: 2rem 1.5rem; }
+    .offer-block .price { text-align: left; font-size: 2rem; }
+    .offer-block .offer-header { flex-direction: column; }
+    nav.top .container { gap: 0.8rem; }
+    nav.top .brand { font-size: 0.85rem; letter-spacing: 0.12em; }
+    nav.top .brand span { font-size: 0.6rem; }
+    nav.top a.cta-small { font-size: 0.8rem; padding: 0.5rem 0.9rem; }
+    .hero { padding: 3rem 0 5rem; }
+    .hero .container {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      text-align: center;
+    }
+    .hero .text { text-align: center; }
+    .hero .logo { width: 320px; margin-bottom: 1.2rem; }
+    .hero p.sub { margin-left: auto; margin-right: auto; }
+    .hero .photo-wrapper {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    footer.site .footer-logo { height: 72px; }
+    section { padding: 3.5rem 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top Nav -->
+<nav class="top">
+  <div class="container">
+    <a href="#top" class="brand">Sailfish<span>Education Consulting</span></a>
+    <a href="#contact" class="cta-small">Free Consultation</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="hero" id="top">
+  <div class="container">
+    <div class="text">
+      <img src="assets/logo.png" alt="Sailfish Education Consulting" class="logo" />
+      <h1>College essays, finished by Labor Day.</h1>
+      <p class="sub">Sailfish Education Consulting pairs rising seniors with a Yale graduate, Fulbright Scholar, and four-year Yale Admissions Office staffer for eight focused weeks of essay coaching &mdash; so the work is done before senior fall begins.</p>
+      <a href="#contact" class="btn-cta">Book a free 20-minute consultation →</a>
+    </div>
+    <div class="photo-wrapper">
+      <img src="assets/hero.jpg" alt="Kyle Thomas Ramos, founder of Sailfish Education Consulting" />
+    </div>
+  </div>
+</header>
+
+<!-- Who I work with -->
+<section class="who">
+  <div class="container">
+    <span class="section-eyebrow">Who I work with</span>
+    <h2>Two kinds of families.</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Rising high school seniors</h3>
+        <p>Your student is applying to selective schools this fall. They're academically strong — grades and scores are competitive — and you both know the essays are now the variable that actually decides where they get in. You don't want them spending senior fall scrambling between AP classes and supplements at 11pm.</p>
+      </div>
+      <div class="card">
+        <h3>Rising high school sophomores and juniors</h3>
+        <p>Your student is somewhere in their sophomore or junior year, and you're trying to figure out what they should be doing about college right now. Maybe your own college process was decades ago and looks nothing like the current one. Maybe you just want a sanity-check from someone who's been through Yale recently, before they commit to a junior-year course load or summer plan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Offers -->
+<section class="offers" id="offers">
+  <div class="container">
+    <span class="section-eyebrow">What I offer</span>
+    <h2>Two services, no upsell pressure.</h2>
+
+    <!-- Offer 1 -->
+    <div class="offer-block primary">
+      <div class="offer-header">
+        <div class="offer-name">
+          <h2>The Summer Essay Intensive</h2>
+          <p class="tagline">Eight weeks. One coach. A finished application portfolio.</p>
+        </div>
+        <div class="price">
+          <small>Starting at</small>
+          $2,500
+        </div>
+      </div>
+
+      <h4>What you walk away with</h4>
+      <ul>
+        <li>A polished Common Application personal statement (650 words)</li>
+        <li>Polished supplemental essays for up to five schools (typically 15–25 short essays)</li>
+        <li>A polished résumé</li>
+        <li>A Common Application activities list</li>
+      </ul>
+
+      <h4>How it works</h4>
+      <p>Weekly 60-minute Zoom sessions, plus written feedback on every draft within 48 hours. The schedule runs late June through mid-August, with a target completion before Labor Day.</p>
+
+      <h4>Optional add-ons</h4>
+      <ul>
+        <li>Additional school's supplements — $300 per school beyond five</li>
+        <li>Interview prep (two mock interviews + debrief) — $300</li>
+        <li>Ad-hoc check-in sessions after application completion (1 hour) — $200 each</li>
+      </ul>
+
+      <div class="offer-cta">
+        <a href="#contact" class="btn-cta">Book a free consultation →</a>
+      </div>
+
+      <p class="refund-note">Full refund within Week 1 if the fit isn't right. After Week 1, the initial $1,250 is non-refundable — but you can cancel anytime before Week 4 with no obligation to pay the remainder. Payment: $1,250 at engagement start, $1,250 at the start of Week 4.</p>
+    </div>
+
+    <!-- Offer 2 -->
+    <div class="offer-block secondary">
+      <div class="offer-header">
+        <div class="offer-name">
+          <h2>Junior Year Roadmap Session</h2>
+          <p class="tagline">One hour-long conversation. One written plan. No upsell.</p>
+        </div>
+        <div class="price">
+          <small>Flat fee</small>
+          $225
+        </div>
+      </div>
+
+      <h4>What you walk away with</h4>
+      <ul>
+        <li>An hour-long live Zoom session (parent and student both welcome)</li>
+        <li>A 2–3 page personalized PDF roadmap, delivered within five business days, covering:</li>
+      </ul>
+      <ul style="padding-left: 2rem;">
+        <li>A starter college list with fit reasoning</li>
+        <li>Recommended summer activities by interest area</li>
+        <li>Junior-year course planning thoughts</li>
+        <li>Specific, long-term college application advice and preparation based on your conversation</li>
+      </ul>
+
+      <h4>Who it's for</h4>
+      <p>Parents of juniors — and sophomores who want to start early — who feel like they should be doing something about college but don't know what.</p>
+
+      <div class="offer-cta">
+        <a href="#contact" class="btn-cta-outline">Book your roadmap session →</a>
+      </div>
+
+      <p class="refund-note">Paid in full at booking. Reschedule freely up to 24 hours before the session.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Bio -->
+<section class="bio">
+  <div class="container">
+    <span class="section-eyebrow">About</span>
+    <h2>Kyle Thomas Ramos</h2>
+    <div class="grid">
+      <img src="assets/bio.jpg" alt="Kyle Thomas Ramos" class="bio-photo" />
+      <div class="text">
+        <p>Kyle Thomas Ramos is the founder of Sailfish Education Consulting. He graduated magna cum laude from Yale with combined Bachelor's and Master's degrees in Political Science and an Advanced Certificate in Spanish. During his senior year, he was named a U.S. Fulbright recipient, a Rhodes Scholar Finalist, and one of two graduation marshals chosen to represent the top scholars of his residential college. His senior essay, <em>Midnight Confirmations: The Politics of Last-Ditch Judicial Appointments</em>, won Yale's Percival Wood Clement Prize for the best senior essay defending the principles of the U.S. Constitution.</p>
+        <p>For four years, Kyle served on the staff of the Yale Office of Undergraduate Admissions, most recently as Head Tour Guide — leading the recruitment and training of the university's 70-person student ambassador team and rewriting Yale's official campus tour, now taken by more than 35,000 visitors each year. He has also served on numerous Yale advisory committees, including the Provost's Undergraduate Advisory Committee, the Post-Affirmative Action Admissions Advisory Committee, and the Dean Selection Committee for Pauli Murray College.</p>
+        <p>He coaches Sailfish students from his home base in Stuart, Florida — and, beginning September 2026, from Barcelona, where he will conduct Fulbright research as a Pre-Doctoral Researcher with the Faculty of Law at the Universitat de Barcelona.</p>
+        <div class="bio-links">
+          <a href="assets/resume.pdf" target="_blank" rel="noopener">Résumé →</a>
+          <a href="https://www.linkedin.com/in/kylethomasramos/" target="_blank" rel="noopener">LinkedIn →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <span class="section-eyebrow">Questions</span>
+    <h2>Frequently asked.</h2>
+
+    <details class="faq-item">
+      <summary>My student already has a school counselor. Why do they need this?</summary>
+      <p>Most school counselors juggle 200–400 students. They cannot give your essays line-by-line feedback within 48 hours, brainstorm story angles one-on-one, or coach the specific voice that an admissions reader will respond to. This is built for the work counselors don't have the bandwidth to do.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Do you write essays for students?</summary>
+      <p>No. Every essay is the student's own writing in their own voice. Kyle coaches structure, asks questions to surface stronger material, and gives line-level feedback — but never drafts essays for students. Admissions readers can spot ghost-written essays, and beyond the ethics, ghost-writing actively hurts admission outcomes.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>What if my student isn't applying to top-25 schools?</summary>
+      <p>The intensive is built for students aiming at selective programs where essays are a real variable. If your student is applying primarily to schools with rolling admissions or above 50% acceptance rates, the full intensive is probably more than you need — the Junior Year Roadmap Session is a better fit.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can we add more schools' supplements partway through?</summary>
+      <p>Yes. Additional supplemental essays are $300 per school beyond the first five. Most families add 1–3 schools mid-summer once the personal statement is locked in.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is the engagement refundable?</summary>
+      <p>Within Week 1, yes — full refund of the initial $1,250. After Week 1, that initial payment is non-refundable, but you can still cancel before the start of Week 4 without owing the second $1,250. The full engagement is only locked in once that second payment is made.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>How do payments work?</summary>
+      <p>The Summer Essay Intensive is $1,250 at engagement start and $1,250 at the start of Week 4. The Roadmap Session is $225 paid in full at booking. Payment is handled through Stripe.</p>
+    </details>
+
+    <p class="faq-followup">If you have additional questions, please feel free to email <a href="mailto:kyle@sailfishedu.com">kyle@sailfishedu.com</a>!</p>
+  </div>
+</section>
+
+<!-- Footer CTA -->
+<section class="footer-cta" id="contact">
+  <div class="container">
+    <h2>Let's see if it's a fit.</h2>
+    <p>The free 20-minute call is exactly that — a real conversation about your student's situation, no high-pressure pitch. If Sailfish isn't right for you, I'll say so.</p>
+    <a href="https://cal.com/sailfisheducationconsulting/free-consultation" class="btn-cta">Book your free consultation →</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site">
+  <div class="container">
+    <img src="assets/logo.png" alt="Sailfish Education Consulting" class="footer-logo" />
+    <p>Founded 2026 &middot; Based in Stuart, FL and Barcelona, Spain</p>
+    <p>
+      <a href="mailto:kyle@sailfishedu.com">kyle@sailfishedu.com</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
