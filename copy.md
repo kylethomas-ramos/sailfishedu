@@ -16,9 +16,12 @@ Voice: Confident but not slick. Specific and concrete, not motivational. Writes 
 
 ---
 
-## Who I work with
+## Who this is for
 
 Two short profiles, side by side. Both address the parent directly (who is the buyer for both services), with student grade-level used as the card header so parents self-sort.
+
+Section eyebrow: *Who this is for*
+H2: *Built for two kinds of families.*
 
 **Rising high school seniors.** Your student is applying to selective schools this fall. They're academically strong — grades and scores are competitive — and you both know the essays are now the variable that actually decides where they get in. You don't want them spending senior fall scrambling between AP classes and supplements at 11pm.
 
@@ -45,7 +48,7 @@ Two short profiles, side by side. Both address the parent directly (who is the b
 - Interview prep (two mock interviews + debrief) — $300
 - Ad-hoc check-in sessions after application completion (1 hour) — $200 each
 
-**Refund policy:** Full refund within Week 1 if it's not the right fit. After Week 1, the initial $1,250 is non-refundable — but the family can cancel anytime before Week 4 with no obligation to pay the second $1,250. Full engagement is only locked in once the Week 4 payment is made.
+**Refund policy (NOT on website — discussed in free consultation):** Full refund within Week 1 if it's not the right fit. After Week 1, the initial $1,250 is non-refundable — but the family can cancel anytime before Week 4 with no obligation to pay the second $1,250. Full engagement is only locked in once the Week 4 payment is made.
 
 **CTA:** Book a free consultation →
 
@@ -98,10 +101,6 @@ The intensive is built for students aiming at selective programs where essays ar
 **Can we add more schools' supplements partway through?**
 
 Yes. Additional supplemental essays are $300 per school beyond the first five. Most families add 1–3 schools mid-summer once the personal statement is locked in.
-
-**Is the engagement refundable?**
-
-Within Week 1, yes — full refund of the initial $1,250. After Week 1, that initial payment is non-refundable, but you can still cancel before the start of Week 4 without owing the second $1,250. The full engagement is only locked in once that second payment is made.
 
 **How do payments work?**
 
