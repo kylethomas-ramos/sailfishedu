@@ -70,13 +70,13 @@ H2: *Built for two kinds of families.*
 
 **Who it's for:** Parents of juniors (and sophomores who want to start early) who feel like they should be doing something about college but don't know what.
 
-**CTA:** Book your roadmap session →
+**CTA:** Book a free consultation →
 
 ---
 
 ## About Kyle
 
-Kyle Thomas Ramos is the founder of Sailfish Education Consulting. He graduated magna cum laude from Yale with combined Bachelor's and Master's degrees in Political Science and an Advanced Certificate in Spanish. During his senior year, he was named a U.S. Fulbright recipient, a Rhodes Scholar Finalist, and one of two graduation marshals chosen to represent the top scholars of his residential college. His senior essay, *Midnight Confirmations: The Politics of Last-Ditch Judicial Appointments*, won Yale's Percival Wood Clement Prize for the best senior essay defending the principles of the U.S. Constitution.
+Kyle Thomas Ramos is the founder of Sailfish Education Consulting. He graduated magna cum laude from Yale in four years with combined Bachelor's and Master's degrees in Political Science and an Advanced Certificate in Spanish. During his senior year, he was named a U.S. Fulbright recipient, a Rhodes Scholar Finalist, and one of two graduation marshals chosen to represent the top scholars of his residential college. His senior essay, *Midnight Confirmations: The Politics of Last-Ditch Judicial Appointments*, won Yale's Percival Wood Clement Prize for the best senior essay defending the principles of the U.S. Constitution.
 
 For four years, Kyle served on the staff of the Yale Office of Undergraduate Admissions, most recently as Head Tour Guide — leading the recruitment and training of the university's 70-person student ambassador team and rewriting Yale's official campus tour, now taken by more than 35,000 visitors each year. He has also served on numerous Yale advisory committees, including the Provost's Undergraduate Advisory Committee, the Post-Affirmative Action Admissions Advisory Committee, and the Dean Selection Committee for Pauli Murray College.
 
