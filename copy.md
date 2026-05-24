@@ -8,9 +8,9 @@ Voice: Confident but not slick. Specific and concrete, not motivational. Writes 
 
 ## Hero
 
-**Headline:** *College essays, finished by Labor Day.*
+**Headline:** *Your Student's College Application, finished by Labor Day.*
 
-**Sub-headline:** *Sailfish Education Consulting pairs rising seniors with a Yale graduate, Fulbright Scholar, and four-year Yale Admissions Office staffer for eight focused weeks of essay coaching — so the work is done before senior fall begins.*
+**Sub-headline:** *Sailfish Education Consulting pairs rising seniors with a Yale graduate, Fulbright Scholar, and four-year Yale Admissions Office staffer for eight focused weeks of college application essay coaching — so the work is done before senior fall begins.*
 
 **Primary CTA:** Book a free 20-minute consultation →
 
